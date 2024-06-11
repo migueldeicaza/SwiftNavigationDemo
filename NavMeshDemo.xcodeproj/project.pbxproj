@@ -13,6 +13,11 @@
 		4901C66C2AB4F65F00FBDBF4 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901C66B2AB4F65F00FBDBF4 /* ImmersiveView.swift */; };
 		4901C66E2AB4F66000FBDBF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4901C66D2AB4F66000FBDBF4 /* Assets.xcassets */; };
 		4901C6712AB4F66000FBDBF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4901C6702AB4F66000FBDBF4 /* Preview Assets.xcassets */; };
+		4901C67A2AB4F86000FBDBF4 /* ObjMeshLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901C6792AB4F86000FBDBF4 /* ObjMeshLoader.swift */; };
+		4901C67C2AB4F8A600FBDBF4 /* FakeRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901C67B2AB4F8A600FBDBF4 /* FakeRandom.swift */; };
+		4901C6812AB4F9E500FBDBF4 /* dungeon.obj in Resources */ = {isa = PBXBuildFile; fileRef = 4901C67E2AB4F9E500FBDBF4 /* dungeon.obj */; };
+		4901C6822AB4F9E500FBDBF4 /* nav_test.obj in Resources */ = {isa = PBXBuildFile; fileRef = 4901C67F2AB4F9E500FBDBF4 /* nav_test.obj */; };
+		4901C6832AB4F9E500FBDBF4 /* undulating.obj in Resources */ = {isa = PBXBuildFile; fileRef = 4901C6802AB4F9E500FBDBF4 /* undulating.obj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		4901C66D2AB4F66000FBDBF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4901C6702AB4F66000FBDBF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4901C6722AB4F66000FBDBF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4901C6792AB4F86000FBDBF4 /* ObjMeshLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjMeshLoader.swift; sourceTree = "<group>"; };
+		4901C67B2AB4F8A600FBDBF4 /* FakeRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRandom.swift; sourceTree = "<group>"; };
+		4901C67E2AB4F9E500FBDBF4 /* dungeon.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dungeon.obj; path = ../../../recastnavigation/RecastDemo/Bin/Meshes/dungeon.obj; sourceTree = "<group>"; };
+		4901C67F2AB4F9E500FBDBF4 /* nav_test.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = nav_test.obj; path = ../../../recastnavigation/RecastDemo/Bin/Meshes/nav_test.obj; sourceTree = "<group>"; };
+		4901C6802AB4F9E500FBDBF4 /* undulating.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = undulating.obj; path = ../../../recastnavigation/RecastDemo/Bin/Meshes/undulating.obj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 		4901C6622AB4F65F00FBDBF4 /* NavMeshDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4901C67D2AB4F9C700FBDBF4 /* Data */,
+				4901C6782AB4F84A00FBDBF4 /* Utilities */,
 				4901C6672AB4F65F00FBDBF4 /* NavMeshDemoApp.swift */,
 				4901C6692AB4F65F00FBDBF4 /* ContentView.swift */,
 				4901C66B2AB4F65F00FBDBF4 /* ImmersiveView.swift */,
@@ -82,6 +94,25 @@
 				4901C6702AB4F66000FBDBF4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4901C6782AB4F84A00FBDBF4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4901C6792AB4F86000FBDBF4 /* ObjMeshLoader.swift */,
+				4901C67B2AB4F8A600FBDBF4 /* FakeRandom.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4901C67D2AB4F9C700FBDBF4 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4901C67E2AB4F9E500FBDBF4 /* dungeon.obj */,
+				4901C67F2AB4F9E500FBDBF4 /* nav_test.obj */,
+				4901C6802AB4F9E500FBDBF4 /* undulating.obj */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +176,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4901C6812AB4F9E500FBDBF4 /* dungeon.obj in Resources */,
+				4901C6832AB4F9E500FBDBF4 /* undulating.obj in Resources */,
+				4901C6822AB4F9E500FBDBF4 /* nav_test.obj in Resources */,
 				4901C6712AB4F66000FBDBF4 /* Preview Assets.xcassets in Resources */,
 				4901C66E2AB4F66000FBDBF4 /* Assets.xcassets in Resources */,
 			);
@@ -158,8 +192,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4901C66A2AB4F65F00FBDBF4 /* ContentView.swift in Sources */,
+				4901C67A2AB4F86000FBDBF4 /* ObjMeshLoader.swift in Sources */,
 				4901C6682AB4F65F00FBDBF4 /* NavMeshDemoApp.swift in Sources */,
 				4901C66C2AB4F65F00FBDBF4 /* ImmersiveView.swift in Sources */,
+				4901C67C2AB4F8A600FBDBF4 /* FakeRandom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
